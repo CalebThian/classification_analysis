@@ -4,7 +4,7 @@
 
 ### 1. subject = {Design, Social Sciences, Management, Photography, Science, Information Technology, Music, Personal Development}
 ### 2. subscribers = 0<N(7500,2500)
-### 3. free = {0,1}
+### 3. free = {0,1} 1 means free
 ### 4. fee = {x|0<=x<=2000,x=10n}
 ### 5. reviews = randint(0,subscribers)
 ### 6. avg reviews = rand.uniform(0.0,5.0)
@@ -56,8 +56,8 @@ for i in range(num_lecture):
     temp.append(subscriber[i]) # 1. subscriber
     temp.append(random.choice([0,1])) # 2. free
     
-    # If free, fee=0
-    if temp[2] == 0:
+    # If free=1, fee=0
+    if temp[2] == 1:
         temp.append(0) #3. fee
     else:
         temp.append(fee[i]) #3. fee
