@@ -6,7 +6,6 @@ def readFile(path):
     df = pd.read_csv(path)
     df = labelEncoder(df)
     df = preprocess_date(df,"published date")
-    print(df)
     X = df.iloc[:,:-1]
     y = df.iloc[:,-1]
     return X,y,df.columns
