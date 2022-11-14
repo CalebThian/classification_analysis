@@ -1,13 +1,14 @@
 import pandas as pd
 import numpy as np
+from datetime import datetime
 
 def readFile(path):
     df = pd.read_csv(path)
-    print(df)
     df = labelEncoder(df)
+    df = preprocess_date(df,"published date")
+    print(df)
     X = df.iloc[:,:-1]
     y = df.iloc[:,-1]
-    print(df)
     return X,y,df.columns
     
 def labelEncoder(df):
@@ -24,7 +25,16 @@ def labelEncoder(df):
                 for r in range(len(df)):
                     df.loc[r,df.columns[i]] = label_number[df[df.columns[i]][r]]
     return df
-    
+
+def preprocess_date(df,column_name):
+    date = df[column_name]
+    timestamp = []
+    for d in date:
+        d_temp = datetime.strptime(d, "%Y-%m-%d")
+        timestamp.append(int(datetime.timestamp(d_temp)))
+    df[column_name]=timestamp
+    return df
+
 path = "./data.csv"
 readFile(path)
     
