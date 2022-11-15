@@ -1,11 +1,13 @@
 import pandas as pd
 import numpy as np
 from datetime import datetime
+import sweetviz as sv
 
 def readFile(path):
     df = pd.read_csv(path)
     df = labelEncoder(df)
     df = preprocess_date(df,"published date")
+    EDA(df)
     X = df.iloc[:,:-1]
     y = df.iloc[:,-1]
     return X,y,df.columns
@@ -33,6 +35,12 @@ def preprocess_date(df,column_name):
         timestamp.append(int(datetime.timestamp(d_temp)))
     df[column_name]=timestamp
     return df
+
+def EDA(df):
+    #analyzing the dataset
+    advert_report = sv.analyze(df)
+    #display the report
+    advert_report.show_html('Advertising.html')
 
 path = "./data.csv"
 readFile(path)
