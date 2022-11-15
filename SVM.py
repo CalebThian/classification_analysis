@@ -1,4 +1,4 @@
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn import svm
 from utils import readFile
 from sklearn.model_selection import KFold
 from sklearn.metrics import confusion_matrix
@@ -23,8 +23,8 @@ for train_index, test_index in kf.split(X):
     X_train, X_test = X.iloc[train_index], X.iloc[test_index]
     y_train, y_test = y.iloc[train_index], y.iloc[test_index]
     
-    # 建立 KNN 模型
-    clf = KNeighborsClassifier(n_neighbors=2)
+    # 建立 SVM 模型
+    clf = svm.SVC()
     # 使用訓練資料訓練模型
     clf.fit(X_train, y_train)
     # 使用訓練資料預測分類
