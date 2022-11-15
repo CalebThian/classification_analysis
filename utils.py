@@ -4,13 +4,12 @@ from datetime import datetime
 import sweetviz as sv
 
 def readFile(path):
-    df = pd.read_csv(path)
-    df = labelEncoder(df)
+    data = pd.read_csv(path)
+    df = labelEncoder(data.copy())
     df = preprocess_date(df,"published date")
-    EDA(df)
     X = df.iloc[:,:-1]
     y = df.iloc[:,-1]
-    return X,y,df.columns
+    return data,X,y,df.columns
     
 def labelEncoder(df):
     # Select categorical features
@@ -40,9 +39,10 @@ def EDA(df):
     #analyzing the dataset
     advert_report = sv.analyze(df)
     #display the report
-    advert_report.show_html('Advertising.html')
+    advert_report.show_html('EDA.html')
 
-path = "./data.csv"
-readFile(path)
-    
+if __name__=="__main__":
+    path = "./data.csv"
+    df,_,_,_ = readFile(path)
+    EDA(df)
     

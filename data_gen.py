@@ -4,8 +4,8 @@
 
 ### 1. subject = {Design, Social Sciences, Management, Photography, Science, Information Technology, Music, Personal Development}
 ### 2. subscribers = 0<N(7500,2500)
-### 3. free = {0,1} 1 if free
-### 4. fee = {x|0<=x<=2000,x=10n}
+### 3. free = {0,1} 1 if free with p=0.25,Bernoulli Trial
+### 4. fee = 0<(Exp(scale = 100)+10)*10
 ### 5. reviews = randint(0,subscribers)
 ### 6. avg reviews = rand.uniform(0.0,5.0)
 ### 7. level = {Beginner(1), Intermediate(2), Expert(3)}
@@ -16,11 +16,11 @@
 ### Label-> recommend:{0,1}
 
 ## Rule(If 1 of the below rules is satisfied, recommend the course):
-### 1. Subscriber > 10000
-### 2. review >= 0.75*subscriber && avg.reviews >= 4.0
-### 3. level = beginner and fee <= 500
-### 4. level = intermediate and fee <= 1000
-### 5. level = expert and fee <= 1500
+### 1. Subscriber > 12000
+### 2. review >= 0.8*subscriber && avg.reviews >= 4.5
+### 3. level = beginner and fee <= 100
+### 4. level = intermediate and fee <= 250
+### 5. level = expert and fee <= 500
 
 import random
 import numpy as np
@@ -46,15 +46,16 @@ lectures = np.random.normal(10,5,num_lecture)
 lectures = np.array(np.round_(lectures.clip(1)),dtype = "int64")
 duration = np.random.normal(30,10,num_lecture)
 duration = duration.clip(0)
-fee = np.round_(np.random.uniform(1,200,num_lecture))*10
+fee = (np.round_(np.random.exponential(100,num_lecture))+10)*10
 fee = np.array(fee,dtype = "int64")
 avg_reviews = np.round_(np.random.uniform(0,5,num_lecture),decimals = 1)
+
 
 for i in range(num_lecture):
     temp = []
     temp.append(random.choice(subject)) # 0. subject
     temp.append(subscriber[i]) # 1. subscriber
-    temp.append(random.choice([0,1])) # 2. free
+    temp.append(random.choices([0,1],weights=(3,1))[0]) # 2. free
     
     # If free, fee=0
     if temp[2] == 1:
@@ -72,21 +73,21 @@ for i in range(num_lecture):
     temp.append(random.choice([0,1])) #10. Substitles
     
     ## Rule:
-    ### 1. Subscriber > 10000
-    ### 2. review >= 0.75*subscriber && avg.reviews >= 4.0
-    ### 3. level = beginner and fee <= 500
-    ### 4. level = intermediate and fee <= 1000
-    ### 5. level = expert and fee <= 1500
+    ### 1. Subscriber > 12000
+    ### 2. review >= 0.8*subscriber && avg.reviews >= 4.5
+    ### 3. level = beginner and fee <= 100
+    ### 4. level = intermediate and fee <= 250
+    ### 5. level = expert and fee <= 500
 
-    if temp[1] > 10000:
+    if temp[1] > 12000:
         temp.append(1)
-    elif temp[4]>= 0.75*temp[1] and temp[5]>=4.0:
+    elif temp[4]>= 0.8*temp[1] and temp[5]>=4.5:
         temp.append(1)
-    elif temp[6]=="Beginner" and temp[3]<=500:
+    elif temp[6]=="Beginner" and temp[3]<=100:
         temp.append(1)
-    elif temp[6]=="Intermediate" and temp[3]<=1000:
+    elif temp[6]=="Intermediate" and temp[3]<=250:
         temp.append(1)
-    elif temp[6]=="Expert" and temp[3]<=1500:
+    elif temp[6]=="Expert" and temp[3]<=500:
         temp.append(1)
     else:
         temp.append(0)

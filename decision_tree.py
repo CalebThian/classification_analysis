@@ -9,7 +9,7 @@ from dtreeviz.trees import dtreeviz # remember to load the package
 import numpy as np
 
 path = "./data.csv"
-X,y,features = readFile(path)
+_,X,y,features = readFile(path)
 
 # Split X,y using KFold
 kf = KFold(n_splits=5)
@@ -45,7 +45,7 @@ sn.heatmap(cm, annot=True,fmt='d')
 plt.xlabel('Predicted')
 plt.ylabel('Truth')
 plt.show()
-    
+print(len(y_test))
 # Visualize the best tree
 viz = dtreeviz(best_clf, X, y,
                 target_name="target",
