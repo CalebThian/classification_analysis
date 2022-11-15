@@ -1,5 +1,5 @@
 from sklearn.svm import SVC
-from utils import getData,normalization
+from utils import getData,normalization,analysis_wrong
 from sklearn.model_selection import KFold
 from sklearn.metrics import confusion_matrix
 import seaborn as sn
@@ -10,11 +10,12 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 
 path = "./data.csv"
-df,X,y = getData(path)
+df,X,y,ori = getData(path)
 features = df.columns
 
 # Split X,y using train-test-split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+ori_X_train, ori_X_test, ori_y_train, ori_y_test = train_test_split(ori.iloc[:,:-1], ori.iloc[:,-1], test_size=0.2, random_state=42)
 
 # Normalization
 X_train,X_test = normalization(df,X_train,X_test)
@@ -32,7 +33,12 @@ print(np.unique(y_pred,return_counts=True))
 accuracy=clf.score(X_test, y_test)
     
 print(f"Accuracy={round(accuracy*100,2)}%")
- 
+
+# Analysis Wrong
+wrong = analysis_wrong(y_test,y_pred,ori_X_test)
+for wrong,counts in wrong.items():
+    print(f"'{wrong}': {counts}")
+
 # Confusion matrix
 cm = confusion_matrix(y_test, y_pred)
 plt.figure(figsize = (10,7))
