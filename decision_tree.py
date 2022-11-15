@@ -6,6 +6,7 @@ import seaborn as sn
 import matplotlib.pyplot as plt
 from sklearn import tree
 from dtreeviz.trees import dtreeviz # remember to load the package
+import numpy as np
 
 path = "./data.csv"
 X,y,features = readFile(path)
@@ -15,6 +16,8 @@ kf = KFold(n_splits=5)
 
 
 # Train-test-evaluate in for loop
+accuracy = []
+best_acc = 0
 for train_index, test_index in kf.split(X):
     # Split Train and Test
     X_train, X_test = X.iloc[train_index], X.iloc[test_index]
@@ -27,21 +30,26 @@ for train_index, test_index in kf.split(X):
     # 使用訓練資料預測分類
     y_pred = clf.predict(X_test)
     # 計算準確率
-    accuracy = clf.score(X_test, y_test)
-    print(f"accuracy={round(accuracy*100,2)}%")
+    accuracy.append(clf.score(X_test, y_test))
+    if accuracy[-1]>best_acc:
+        best_y_pred = y_pred
+        best_clf = clf
+        best_acc = accuracy[-1]
     
-    # Confusion matrix
-    cm = confusion_matrix(y_test, y_pred)
-    plt.figure(figsize = (10,7))
-    sn.heatmap(cm, annot=True,fmt='d')
-    plt.xlabel('Predicted')
-    plt.ylabel('Truth')
-    plt.show()
+print(f"Average accuracy={round(np.mean(accuracy)*100,2)}%")
+print(f"Best accuracy={round(best_acc*100,2)}%")   
+# Confusion matrix
+cm = confusion_matrix(y_test, best_y_pred)
+plt.figure(figsize = (10,7))
+sn.heatmap(cm, annot=True,fmt='d')
+plt.xlabel('Predicted')
+plt.ylabel('Truth')
+plt.show()
     
-    viz = dtreeviz(clf, X, y,
-                    target_name="target",
-                    feature_names=features,
-                    class_names=['0','1'])
+# Visualize the best tree
+viz = dtreeviz(best_clf, X, y,
+                target_name="target",
+                feature_names=features,
+                class_names=['0','1'])
 
-    viz.save("decision_tree.svg")
-    break
+viz.save("decision_tree.svg")
