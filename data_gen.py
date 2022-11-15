@@ -4,7 +4,7 @@
 
 ### 1. subject = {Design, Social Sciences, Management, Photography, Science, Information Technology, Music, Personal Development}
 ### 2. subscribers = 0<N(7500,2500)
-### 3. free = {0,1} 1 means free
+### 3. free = {0,1} 1 if free
 ### 4. fee = {x|0<=x<=2000,x=10n}
 ### 5. reviews = randint(0,subscribers)
 ### 6. avg reviews = rand.uniform(0.0,5.0)
@@ -15,7 +15,7 @@
 ### 11. substitles = {0,1}
 ### Label-> recommend:{0,1}
 
-## Rule:
+## Rule(If 1 of the below rules is satisfied, recommend the course):
 ### 1. Subscriber > 10000
 ### 2. review >= 0.75*subscriber && avg.reviews >= 4.0
 ### 3. level = beginner and fee <= 500
@@ -56,7 +56,7 @@ for i in range(num_lecture):
     temp.append(subscriber[i]) # 1. subscriber
     temp.append(random.choice([0,1])) # 2. free
     
-    # If free=1, fee=0
+    # If free, fee=0
     if temp[2] == 1:
         temp.append(0) #3. fee
     else:
