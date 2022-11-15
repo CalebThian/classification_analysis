@@ -47,6 +47,7 @@ def normalization(df,X_train,X_test):
 def getData(path):
     data = readFile(path)
     df = labelEncoder(data.copy())
+    df = convertReview(df)
     df = preprocess_date(df,"published date")
     X = df.iloc[:,:-1]
     y = df.iloc[:,-1]
@@ -88,7 +89,8 @@ def analysis_wrong(y_test,y_pred,X_test):
     return wrong
 
 def convertReview(df):
-    df.iloc[:,4] = df.iloc[:,4]/df.iloc[:,1]
+    df['reviews'] = df['reviews']/df['subscribers']
+    df['reviews'] = df['reviews'].fillna(0) # Because maybe no subscriber yet
     return df
 
 

@@ -9,300 +9,114 @@ digraph G {
     node [margin="0.03" penwidth="0.5" width=.1, height=.1];
     edge [arrowsize=.4 penwidth="0.3"]
 
-    node11 [margin="0" shape=none label=<<table border="0">
+    node7 [margin="0" shape=none label=<<table border="0">
             
             <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node11_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node10 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node10_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node9 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node9_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node7 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node7_9120.svg"/></td>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node7_18452.svg"/></td>
             </tr>
             </table>>]
 	node5 [margin="0" shape=none label=<<table border="0">
             
             <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node5_9120.svg"/></td>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node5_18452.svg"/></td>
             </tr>
             </table>>]
 	node4 [margin="0" shape=none label=<<table border="0">
             
             <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node4_9120.svg"/></td>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node4_18452.svg"/></td>
             </tr>
             </table>>]
 	node3 [margin="0" shape=none label=<<table border="0">
             
             <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node3_9120.svg"/></td>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node3_18452.svg"/></td>
             </tr>
             </table>>]
 	node1 [margin="0" shape=none label=<<table border="0">
             
             <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node1_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node29 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node29_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node27 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node27_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node25 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node25_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node24 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node24_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node22 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node22_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node21 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node21_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node39 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node39_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node38 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node38_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node37 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node37_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node44 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node44_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node36 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node36_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node34 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node34_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node20 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node20_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node55 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node55_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node54 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node54_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node52 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node52_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node51 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node51_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node63 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node63_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node62 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node62_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node61 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node61_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node71 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node71_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node70 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node70_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node68 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node68_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node60 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node60_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node50 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node50_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node78 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node78_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node77 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node77_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node84 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node84_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node82 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node82_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node76 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node76_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node75 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node75_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node49 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node49_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node47 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node47_9120.svg"/></td>
-            </tr>
-            </table>>]
-	node19 [margin="0" shape=none label=<<table border="0">
-            
-            <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node19_9120.svg"/></td>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node1_18452.svg"/></td>
             </tr>
             </table>>]
 	node18 [margin="0" shape=none label=<<table border="0">
             
             <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node18_9120.svg"/></td>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node18_18452.svg"/></td>
+            </tr>
+            </table>>]
+	node16 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node16_18452.svg"/></td>
+            </tr>
+            </table>>]
+	node15 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node15_18452.svg"/></td>
+            </tr>
+            </table>>]
+	node24 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node24_18452.svg"/></td>
+            </tr>
+            </table>>]
+	node22 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node22_18452.svg"/></td>
+            </tr>
+            </table>>]
+	node14 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node14_18452.svg"/></td>
+            </tr>
+            </table>>]
+	node30 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node30_18452.svg"/></td>
+            </tr>
+            </table>>]
+	node29 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node29_18452.svg"/></td>
+            </tr>
+            </table>>]
+	node27 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node27_18452.svg"/></td>
+            </tr>
+            </table>>]
+	node13 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node13_18452.svg"/></td>
+            </tr>
+            </table>>]
+	node12 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node12_18452.svg"/></td>
             </tr>
             </table>>]
 	node0 [margin="0" shape=none label=<<table border="0">
             
             <tr>
-                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node0_9120.svg"/></td>
+                    <td><img src="C:\Users\caleb\AppData\Local\Temp/node0_18452.svg"/></td>
             </tr>
             </table>>]
-    node11 -> leaf12 [penwidth=0.3 color="#444443" label=<>]
-	node11 -> leaf13 [penwidth=0.3 color="#444443" label=<>]
+    node7 -> leaf8 [penwidth=0.3 color="#444443" label=<>]
+	node7 -> leaf9 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                leaf12 -> leaf13 [style=invis]
-            }
-            
-	node10 -> node11 [penwidth=0.3 color="#444443" label=<>]
-	node10 -> leaf14 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node11 -> leaf14 [style=invis]
-            }
-            
-	node9 -> node10 [penwidth=0.3 color="#444443" label=<>]
-	node9 -> leaf15 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node10 -> leaf15 [style=invis]
-            }
-            
-	node7 -> leaf8 [penwidth=0.3 color="#444443" label=<>]
-	node7 -> node9 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                leaf8 -> node9 [style=invis]
+                leaf8 -> leaf9 [style=invis]
             }
             
 	node5 -> leaf6 [penwidth=0.3 color="#444443" label=<>]
@@ -314,19 +128,19 @@ digraph G {
             }
             
 	node4 -> node5 [penwidth=0.3 color="#444443" label=<>]
-	node4 -> leaf16 [penwidth=0.3 color="#444443" label=<>]
+	node4 -> leaf10 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                node5 -> leaf16 [style=invis]
+                node5 -> leaf10 [style=invis]
             }
             
 	node3 -> node4 [penwidth=0.3 color="#444443" label=<>]
-	node3 -> leaf17 [penwidth=0.3 color="#444443" label=<>]
+	node3 -> leaf11 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                node4 -> leaf17 [style=invis]
+                node4 -> leaf11 [style=invis]
             }
             
 	node1 -> leaf2 [penwidth=0.3 color="#444443" label=<>]
@@ -337,36 +151,36 @@ digraph G {
                 leaf2 -> node3 [style=invis]
             }
             
-	node29 -> leaf30 [penwidth=0.3 color="#444443" label=<>]
-	node29 -> leaf31 [penwidth=0.3 color="#444443" label=<>]
+	node18 -> leaf19 [penwidth=0.3 color="#444443" label=<>]
+	node18 -> leaf20 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                leaf30 -> leaf31 [style=invis]
+                leaf19 -> leaf20 [style=invis]
             }
             
-	node27 -> leaf28 [penwidth=0.3 color="#444443" label=<>]
-	node27 -> node29 [penwidth=0.3 color="#444443" label=<>]
+	node16 -> leaf17 [penwidth=0.3 color="#444443" label=<>]
+	node16 -> node18 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                leaf28 -> node29 [style=invis]
+                leaf17 -> node18 [style=invis]
             }
             
-	node25 -> leaf26 [penwidth=0.3 color="#444443" label=<>]
-	node25 -> node27 [penwidth=0.3 color="#444443" label=<>]
+	node15 -> node16 [penwidth=0.3 color="#444443" label=<>]
+	node15 -> leaf21 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                leaf26 -> node27 [style=invis]
+                node16 -> leaf21 [style=invis]
             }
             
-	node24 -> node25 [penwidth=0.3 color="#444443" label=<>]
-	node24 -> leaf32 [penwidth=0.3 color="#444443" label=<>]
+	node24 -> leaf25 [penwidth=0.3 color="#444443" label=<>]
+	node24 -> leaf26 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                node25 -> leaf32 [style=invis]
+                leaf25 -> leaf26 [style=invis]
             }
             
 	node22 -> leaf23 [penwidth=0.3 color="#444443" label=<>]
@@ -377,522 +191,168 @@ digraph G {
                 leaf23 -> node24 [style=invis]
             }
             
-	node21 -> node22 [penwidth=0.3 color="#444443" label=<>]
-	node21 -> leaf33 [penwidth=0.3 color="#444443" label=<>]
+	node14 -> node15 [penwidth=0.3 color="#444443" label=<>]
+	node14 -> node22 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                node22 -> leaf33 [style=invis]
+                node15 -> node22 [style=invis]
             }
             
-	node39 -> leaf40 [penwidth=0.3 color="#444443" label=<>]
-	node39 -> leaf41 [penwidth=0.3 color="#444443" label=<>]
+	node30 -> leaf31 [penwidth=0.3 color="#444443" label=<>]
+	node30 -> leaf32 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                leaf40 -> leaf41 [style=invis]
+                leaf31 -> leaf32 [style=invis]
             }
             
-	node38 -> node39 [penwidth=0.3 color="#444443" label=<>]
-	node38 -> leaf42 [penwidth=0.3 color="#444443" label=<>]
+	node29 -> node30 [penwidth=0.3 color="#444443" label=<>]
+	node29 -> leaf33 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                node39 -> leaf42 [style=invis]
+                node30 -> leaf33 [style=invis]
             }
             
-	node37 -> node38 [penwidth=0.3 color="#444443" label=<>]
-	node37 -> leaf43 [penwidth=0.3 color="#444443" label=<>]
+	node27 -> leaf28 [penwidth=0.3 color="#444443" label=<>]
+	node27 -> node29 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                node38 -> leaf43 [style=invis]
+                leaf28 -> node29 [style=invis]
             }
             
-	node44 -> leaf45 [penwidth=0.3 color="#444443" label=<>]
-	node44 -> leaf46 [penwidth=0.3 color="#444443" label=<>]
+	node13 -> node14 [penwidth=0.3 color="#444443" label=<>]
+	node13 -> node27 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                leaf45 -> leaf46 [style=invis]
+                node14 -> node27 [style=invis]
             }
             
-	node36 -> node37 [penwidth=0.3 color="#444443" label=<>]
-	node36 -> node44 [penwidth=0.3 color="#444443" label=<>]
+	node12 -> node13 [penwidth=0.3 color="#444443" label=<>]
+	node12 -> leaf34 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                node37 -> node44 [style=invis]
-            }
-            
-	node34 -> leaf35 [penwidth=0.3 color="#444443" label=<>]
-	node34 -> node36 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                leaf35 -> node36 [style=invis]
-            }
-            
-	node20 -> node21 [penwidth=0.3 color="#444443" label=<>]
-	node20 -> node34 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node21 -> node34 [style=invis]
-            }
-            
-	node55 -> leaf56 [penwidth=0.3 color="#444443" label=<>]
-	node55 -> leaf57 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                leaf56 -> leaf57 [style=invis]
-            }
-            
-	node54 -> node55 [penwidth=0.3 color="#444443" label=<>]
-	node54 -> leaf58 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node55 -> leaf58 [style=invis]
-            }
-            
-	node52 -> leaf53 [penwidth=0.3 color="#444443" label=<>]
-	node52 -> node54 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                leaf53 -> node54 [style=invis]
-            }
-            
-	node51 -> node52 [penwidth=0.3 color="#444443" label=<>]
-	node51 -> leaf59 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node52 -> leaf59 [style=invis]
-            }
-            
-	node63 -> leaf64 [penwidth=0.3 color="#444443" label=<>]
-	node63 -> leaf65 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                leaf64 -> leaf65 [style=invis]
-            }
-            
-	node62 -> node63 [penwidth=0.3 color="#444443" label=<>]
-	node62 -> leaf66 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node63 -> leaf66 [style=invis]
-            }
-            
-	node61 -> node62 [penwidth=0.3 color="#444443" label=<>]
-	node61 -> leaf67 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node62 -> leaf67 [style=invis]
-            }
-            
-	node71 -> leaf72 [penwidth=0.3 color="#444443" label=<>]
-	node71 -> leaf73 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                leaf72 -> leaf73 [style=invis]
-            }
-            
-	node70 -> node71 [penwidth=0.3 color="#444443" label=<>]
-	node70 -> leaf74 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node71 -> leaf74 [style=invis]
-            }
-            
-	node68 -> leaf69 [penwidth=0.3 color="#444443" label=<>]
-	node68 -> node70 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                leaf69 -> node70 [style=invis]
-            }
-            
-	node60 -> node61 [penwidth=0.3 color="#444443" label=<>]
-	node60 -> node68 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node61 -> node68 [style=invis]
-            }
-            
-	node50 -> node51 [penwidth=0.3 color="#444443" label=<>]
-	node50 -> node60 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node51 -> node60 [style=invis]
-            }
-            
-	node78 -> leaf79 [penwidth=0.3 color="#444443" label=<>]
-	node78 -> leaf80 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                leaf79 -> leaf80 [style=invis]
-            }
-            
-	node77 -> node78 [penwidth=0.3 color="#444443" label=<>]
-	node77 -> leaf81 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node78 -> leaf81 [style=invis]
-            }
-            
-	node84 -> leaf85 [penwidth=0.3 color="#444443" label=<>]
-	node84 -> leaf86 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                leaf85 -> leaf86 [style=invis]
-            }
-            
-	node82 -> leaf83 [penwidth=0.3 color="#444443" label=<>]
-	node82 -> node84 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                leaf83 -> node84 [style=invis]
-            }
-            
-	node76 -> node77 [penwidth=0.3 color="#444443" label=<>]
-	node76 -> node82 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node77 -> node82 [style=invis]
-            }
-            
-	node75 -> node76 [penwidth=0.3 color="#444443" label=<>]
-	node75 -> leaf87 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node76 -> leaf87 [style=invis]
-            }
-            
-	node49 -> node50 [penwidth=0.3 color="#444443" label=<>]
-	node49 -> node75 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node50 -> node75 [style=invis]
-            }
-            
-	node47 -> leaf48 [penwidth=0.3 color="#444443" label=<>]
-	node47 -> node49 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                leaf48 -> node49 [style=invis]
-            }
-            
-	node19 -> node20 [penwidth=0.3 color="#444443" label=<>]
-	node19 -> node47 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node20 -> node47 [style=invis]
-            }
-            
-	node18 -> node19 [penwidth=0.3 color="#444443" label=<>]
-	node18 -> leaf88 [penwidth=0.3 color="#444443" label=<>]
-	
-            {
-                rank=same;
-                node19 -> leaf88 [style=invis]
+                node13 -> leaf34 [style=invis]
             }
             
 	node0 -> node1 [penwidth=0.3 color="#444443" label=<&le;>]
-	node0 -> node18 [penwidth=0.3 color="#444443" label=<&gt;>]
+	node0 -> node12 [penwidth=0.3 color="#444443" label=<&gt;>]
 	
             {
                 rank=same;
-                node1 -> node18 [style=invis]
+                node1 -> node12 [style=invis]
             }
             
     leaf2 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf2_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf2_18452.svg"/></td>
         </tr>
         </table>>]
 	leaf6 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf6_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf6_18452.svg"/></td>
         </tr>
         </table>>]
 	leaf8 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf8_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf8_18452.svg"/></td>
         </tr>
         </table>>]
-	leaf12 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+	leaf9 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf12_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf9_18452.svg"/></td>
         </tr>
         </table>>]
-	leaf13 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+	leaf10 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf13_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf10_18452.svg"/></td>
         </tr>
         </table>>]
-	leaf14 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+	leaf11 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf14_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf15 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf15_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf16 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf16_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf11_18452.svg"/></td>
         </tr>
         </table>>]
 	leaf17 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf17_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf17_18452.svg"/></td>
+        </tr>
+        </table>>]
+	leaf19 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf19_18452.svg"/></td>
+        </tr>
+        </table>>]
+	leaf20 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf20_18452.svg"/></td>
+        </tr>
+        </table>>]
+	leaf21 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf21_18452.svg"/></td>
         </tr>
         </table>>]
 	leaf23 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf23_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf23_18452.svg"/></td>
+        </tr>
+        </table>>]
+	leaf25 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf25_18452.svg"/></td>
         </tr>
         </table>>]
 	leaf26 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf26_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf26_18452.svg"/></td>
         </tr>
         </table>>]
 	leaf28 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf28_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf30 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf30_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf28_18452.svg"/></td>
         </tr>
         </table>>]
 	leaf31 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf31_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf31_18452.svg"/></td>
         </tr>
         </table>>]
 	leaf32 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf32_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf32_18452.svg"/></td>
         </tr>
         </table>>]
 	leaf33 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf33_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf33_18452.svg"/></td>
         </tr>
         </table>>]
-	leaf35 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+	leaf34 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf35_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf40 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf40_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf41 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf41_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf42 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf42_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf43 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf43_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf45 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf45_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf46 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf46_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf48 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf48_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf53 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf53_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf56 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf56_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf57 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf57_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf58 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf58_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf59 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf59_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf64 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf64_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf65 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf65_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf66 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf66_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf67 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf67_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf69 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf69_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf72 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf72_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf73 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf73_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf74 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf74_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf79 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf79_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf80 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf80_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf81 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf81_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf83 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf83_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf85 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf85_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf86 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf86_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf87 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf87_9120.svg"/></td>
-        </tr>
-        </table>>]
-	leaf88 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf88_9120.svg"/></td>
+                <td><img src="C:\Users\caleb\AppData\Local\Temp/leaf34_18452.svg"/></td>
         </tr>
         </table>>]
 
@@ -903,7 +363,7 @@ digraph G {
                 
         <table border="0" cellspacing="0" cellpadding="0">
             <tr>
-                <td border="0" cellspacing="0" cellpadding="0"><img src="C:\Users\caleb\AppData\Local\Temp/legend_9120.svg"/></td>
+                <td border="0" cellspacing="0" cellpadding="0"><img src="C:\Users\caleb\AppData\Local\Temp/legend_18452.svg"/></td>
             </tr>
         </table>
         
