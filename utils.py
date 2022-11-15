@@ -2,15 +2,12 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 import sweetviz as sv
+from sklearn import preprocessing
 
 def readFile(path):
     data = pd.read_csv(path)
-    df = labelEncoder(data.copy())
-    df = preprocess_date(df,"published date")
-    X = df.iloc[:,:-1]
-    y = df.iloc[:,-1]
-    return data,X,y,df.columns
-    
+    return data
+
 def labelEncoder(df):
     # Select categorical features
     # Method: unique value < #Row*5%  && dtypes != {float64 or int64}
@@ -40,6 +37,20 @@ def EDA(df):
     advert_report = sv.analyze(df)
     #display the report
     advert_report.show_html('EDA.html')
+    
+def normalization(df,X_train,X_test):
+    normalizer = preprocessing.Normalizer().fit(X_train)  
+    X_train = normalizer.transform(X_train)
+    X_test = normalizer.transform(X_test)
+    return X_train,X_test
+
+def getData(path):
+    df = readFile(path)
+    df = labelEncoder(df)
+    df = preprocess_date(df,"published date")
+    X = df.iloc[:,:-1]
+    y = df.iloc[:,-1]
+    return df,X,y
 
 if __name__=="__main__":
     path = "./data.csv"

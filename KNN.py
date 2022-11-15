@@ -1,5 +1,5 @@
 from sklearn.neighbors import KNeighborsClassifier
-from utils import readFile
+from utils import getData,normalization
 from sklearn.model_selection import KFold
 from sklearn.metrics import confusion_matrix
 import seaborn as sn
@@ -10,15 +10,17 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 
 path = "./data.csv"
-_,X,y,features = readFile(path)
+df,X,y = getData(path)
+features = df.columns
 
 # Split X,y using train-test-split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Train-test-evaluate in for loop
-    
+# Normalization
+X_train,X_test = normalization(df,X_train,X_test)
+
 # 建立 KNN 模型
-clf = KNeighborsClassifier(n_neighbours = 2)
+clf = KNeighborsClassifier(n_neighbors = 2)
 # 使用訓練資料訓練模型
 clf.fit(X_train, y_train)
 print(np.unique(y_train,return_counts=True))
