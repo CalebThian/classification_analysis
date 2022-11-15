@@ -4,7 +4,8 @@ from sklearn.model_selection import KFold
 from sklearn.metrics import confusion_matrix
 import seaborn as sn
 import matplotlib.pyplot as plt
-
+from sklearn import tree
+from dtreeviz.trees import dtreeviz # remember to load the package
 
 path = "./data.csv"
 X,y,features = readFile(path)
@@ -20,19 +21,27 @@ for train_index, test_index in kf.split(X):
     y_train, y_test = y.iloc[train_index], y.iloc[test_index]
     
     # 建立 DecisionTreeClassifier 模型
-    tree = DecisionTreeClassifier(criterion = 'entropy', max_depth=10, random_state=10)
+    clf = DecisionTreeClassifier(criterion = 'entropy', max_depth=10, random_state=10)
     # 使用訓練資料訓練模型
-    tree.fit(X_train, y_train)
+    clf.fit(X_train, y_train)
     # 使用訓練資料預測分類
-    y_pred = tree.predict(X_test)
+    y_pred = clf.predict(X_test)
     # 計算準確率
-    accuracy = tree.score(X_test, y_test)
+    accuracy = clf.score(X_test, y_test)
     print(f"accuracy={round(accuracy*100,2)}%")
     
     # Confusion matrix
     cm = confusion_matrix(y_test, y_pred)
     plt.figure(figsize = (10,7))
-    sn.heatmap(cm, annot=True)
+    sn.heatmap(cm, annot=True,fmt='d')
     plt.xlabel('Predicted')
     plt.ylabel('Truth')
     plt.show()
+    
+    viz = dtreeviz(clf, X, y,
+                    target_name="target",
+                    feature_names=features,
+                    class_names=['0','1'])
+
+    viz.save("decision_tree.svg")
+    break
