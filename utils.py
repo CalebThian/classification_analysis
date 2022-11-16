@@ -65,15 +65,17 @@ def analysis_wrong(y_test,y_pred,X_test):
         "Not recommend avg.reviews >= 4.5":0,
         "Not recommend level = beginner":0,
         "Not recommend duration >= 60":0,
-        "Not recommend fee <= 500":0
+        "Not recommend fee <= 500":0,
+        "Not recommend joint simple rule":0
     }
     for i,(t,p) in enumerate(zip(y_test,y_pred)):
         if t != p:
             if p:
                 wrong["Should not recommend"] += 1
             else:
-                _,wrong_type = simpleRule(X_test.iloc[i,:])
-                wrong["Not recommend "+wrong_type] += 1
+                _,wrong_type = jointSimpleRule(X_test.iloc[i,:])
+                #wrong["Not recommend "+wrong_type] += 1
+                wrong["Not recommend joint simple rule"]+=1
     return wrong
 
 def convertReview(df):
