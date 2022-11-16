@@ -28,6 +28,7 @@ import matplotlib.pyplot as plt
 import random
 import datetime
 import csv
+from utils import ruleCheck
 
 num_lecture = 10000
 header = ["subject","subscribers","free","fee","reviews","avg reviews","level","letures","duration","published date","substitles","recommend"]
@@ -71,26 +72,9 @@ for i in range(num_lecture):
     end = datetime.date(2021,12,31)
     temp.append(start + (end - start) * random.random()) #9. Published Date
     temp.append(random.choice([0,1])) #10. Substitles
-    
-    ## Rule:
-    ### 1. Subscriber > 12000
-    ### 2. review >= 0.8*subscriber && avg.reviews >= 4.5
-    ### 3. level = beginner and fee <= 100
-    ### 4. level = intermediate and fee <= 250
-    ### 5. level = expert and fee <= 500
 
-    if temp[1] > 12000:
-        temp.append(1)
-    elif temp[4]>= 0.8*temp[1] and temp[5]>=4.5:
-        temp.append(1)
-    elif temp[6]=="Beginner" and temp[3]<=100:
-        temp.append(1)
-    elif temp[6]=="Intermediate" and temp[3]<=250:
-        temp.append(1)
-    elif temp[6]=="Expert" and temp[3]<=500:
-        temp.append(1)
-    else:
-        temp.append(0)
+    rec,_ = ruleCheck(temp)
+    temp.append(rec)
  
     data.append(temp)
 

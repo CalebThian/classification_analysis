@@ -53,12 +53,7 @@ def getData(path):
     y = df.iloc[:,-1]
     return df,X,y,data
 
-## Rule(If 1 of the below rules is satisfied, recommend the course):
-### 1. Subscriber > 12000
-### 2. review >= 0.8*subscriber && avg.reviews >= 4.5
-### 3. level = beginner and fee <= 100
-### 4. level = intermediate and fee <= 250
-### 5. level = expert and fee <= 500
+
 def analysis_wrong(y_test,y_pred,X_test):
     wrong = {
         "Should not recommend": 0,
@@ -73,19 +68,8 @@ def analysis_wrong(y_test,y_pred,X_test):
             if p:
                 wrong["Should not recommend"] += 1
             else:
-                if X_test.iloc[i,1] > 12000:
-                    wrong["Not recommend subscriber > 12000"] += 1
-                elif X_test.iloc[i,4]>= 0.8*X_test.iloc[i,1] and X_test.iloc[i,5]>=4.5:
-                    wrong["Not recommend review >= 0.8*subscriber && avg.reviews >= 4.5"] += 1
-                elif X_test.iloc[i,6]=="Beginner" and X_test.iloc[i,3]<=100:
-                    wrong["Not recommend level = beginner and fee <= 100"] += 1
-                elif X_test.iloc[i,6]=="Intermediate" and X_test.iloc[i,3]<=250:
-                    wrong["Not recommend level = intermediate and fee <= 250"] += 1
-                elif X_test.iloc[i,6]=="Expert" and X_test.iloc[i,3]<=500:
-                    wrong["Not recommend level = expert and fee <= 500"] += 1
-                else:
-                    print("Error classify wrong case")
-            
+                _,wrong_type = ruleCheck(X_test.iloc[i,:])
+                wrong["Not recommend "+wrong_type] += 1
     return wrong
 
 def convertReview(df):
@@ -93,6 +77,26 @@ def convertReview(df):
     df['reviews'] = df['reviews'].fillna(0) # Because maybe no subscriber yet
     return df
 
+## Rule(If 1 of the below rules is satisfied, recommend the course):
+### 1. Subscriber > 12000
+### 2. review >= 0.8*subscriber && avg.reviews >= 4.5
+### 3. level = beginner and fee <= 100
+### 4. level = intermediate and fee <= 250
+### 5. level = expert and fee <= 500
+def ruleCheck(row_data):
+    if row_data[1] > 12000:
+        return 1,"subscriber > 12000"
+    elif row_data[4]>= 0.8*row_data[1] and row_data[5]>=4.5:
+        return 1,"review >= 0.8*subscriber && avg.reviews >= 4.5"
+    elif row_data[6]=="Beginner" and row_data[3]<=100:
+        return 1, "level = beginner and fee <= 100"
+    elif row_data[6]=="Intermediate" and row_data[3]<=250:
+        return 1, "level = intermediate and fee <= 250"
+    elif row_data[6]=="Expert" and row_data[3]<=500:
+        return 1, "level = expert and fee <= 500"
+    else:
+        return 0, "Should not recommend"
+        
 
 if __name__=="__main__":
     path = "./data.csv"
