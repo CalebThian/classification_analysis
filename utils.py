@@ -121,6 +121,15 @@ def simpleRule(row_data):
     else:
         return 0, "Should not recommend"
 
+def jointSimpleRule(row_data):
+    if row_data[1] > 8000:
+        if row_data[5]>=3.5:
+            if row_data[6]!="Expert":
+                if row_data[8]>=60:
+                    if row_data[3]<=1000:
+                        return 1
+    return 0
+    
 if __name__=="__main__":
     path = "./data.csv"
     df = readFile(path)
