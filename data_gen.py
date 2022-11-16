@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 import random
 import datetime
 import csv
-from utils import ruleCheck
+from utils import ruleCheck,simpleRule
 
 num_lecture = 10000
 header = ["subject","subscribers","free","fee","reviews","avg reviews","level","letures","duration","published date","substitles","recommend"]
@@ -73,7 +73,8 @@ for i in range(num_lecture):
     temp.append(start + (end - start) * random.random()) #9. Published Date
     temp.append(random.choice([0,1])) #10. Substitles
 
-    rec,_ = ruleCheck(temp)
+    #rec,_ = ruleCheck(temp)
+    rec,_ = simpleRule(temp)
     temp.append(rec)
  
     data.append(temp)

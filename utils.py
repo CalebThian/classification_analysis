@@ -61,14 +61,18 @@ def analysis_wrong(y_test,y_pred,X_test):
         "Not recommend review >= 0.8*subscriber && avg.reviews >= 4.5":0,
         "Not recommend level = beginner and fee <= 100":0,
         "Not recommend level = intermediate and fee <= 250":0,
-        "Not recommend level = expert and fee <= 500":0
+        "Not recommend level = expert and fee <= 500":0,
+        "Not recommend avg.reviews >= 4.5":0,
+        "Not recommend level = beginner":0,
+        "Not recommend duration >= 60":0,
+        "Not recommend fee <= 500":0
     }
     for i,(t,p) in enumerate(zip(y_test,y_pred)):
         if t != p:
             if p:
                 wrong["Should not recommend"] += 1
             else:
-                _,wrong_type = ruleCheck(X_test.iloc[i,:])
+                _,wrong_type = simpleRule(X_test.iloc[i,:])
                 wrong["Not recommend "+wrong_type] += 1
     return wrong
 
@@ -96,7 +100,26 @@ def ruleCheck(row_data):
         return 1, "level = expert and fee <= 500"
     else:
         return 0, "Should not recommend"
-        
+    
+    
+def simpleRule(row_data):
+    ### 1. Subscriber > 12000
+    ### 2. avg.reviews >= 4.5
+    ### 3. level = beginner
+    ### 4. duration > 10
+    ### 5. fee <= 500
+    if row_data[1] > 12000:
+        return 1,"subscriber > 12000"
+    elif row_data[5]>=4.5:
+        return 1,"avg.reviews >= 4.5"
+    elif row_data[6]=="Beginner":
+        return 1, "level = beginner"
+    elif row_data[8]>=60:
+        return 1, "duration >= 60"
+    elif row_data[3]<=500:
+        return 1, "fee <= 500"
+    else:
+        return 0, "Should not recommend"
 
 if __name__=="__main__":
     path = "./data.csv"
