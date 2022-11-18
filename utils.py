@@ -3,6 +3,7 @@ import numpy as np
 from datetime import datetime
 import sweetviz as sv
 from sklearn import preprocessing
+import matplotlib.pyplot as plt
 
 def readFile(path):
     data = pd.read_csv(path)
@@ -47,12 +48,16 @@ def normalization(df,X_train,X_test):
 def getData(path):
     data = readFile(path)
     df = labelEncoder(data.copy())
-    df = convertReview(df)
+    #df = convertReview(df)
     df = preprocess_date(df,"published date")
     X = df.iloc[:,:-1]
     y = df.iloc[:,-1]
     return df,X,y,data
 
+def convertReview(df):
+    df['reviews'] = df['reviews']/df['subscribers']
+    df['reviews'] = df['reviews'].fillna(0) # Because maybe no subscriber yet
+    return df
 
 def analysis_wrong(y_test,y_pred,X_test):
     wrong = {
@@ -73,15 +78,15 @@ def analysis_wrong(y_test,y_pred,X_test):
             if p:
                 wrong["Should not recommend"] += 1
             else:
-                _,wrong_type = jointSimpleRule(X_test.iloc[i,:])
-                #wrong["Not recommend "+wrong_type] += 1
-                wrong["Not recommend joint simple rule"]+=1
-    return wrong
-
-def convertReview(df):
-    df['reviews'] = df['reviews']/df['subscribers']
-    df['reviews'] = df['reviews'].fillna(0) # Because maybe no subscriber yet
-    return df
+                _,wrong_type = ruleCheck(X_test.iloc[i,:])
+                #_,wrong_type = simpleRule(X_test.iloc[i,:])
+                wrong["Not recommend "+wrong_type] += 1
+                #_,wrong_type = jointSimpleRule(X_test.iloc[i,:])
+                #wrong["Not recommend joint simple rule"]+=1
+                
+    # Remove key if value == 0
+    Wrong = {key: wrong[key] for key in wrong if wrong[key] != 0}
+    return Wrong
 
 ## Rule(If 1 of the below rules is satisfied, recommend the course):
 ### 1. Subscriber > 12000
@@ -131,11 +136,23 @@ def jointSimpleRule(row_data):
                     if row_data[3]<=1000:
                         return 1
     return 0
-    
+
+def featureImportance(clf,features):
+    # get importance
+    importance = clf.feature_importances_
+    # summarize feature importance
+    for f,v in zip(features[:-1],importance):
+        print(f'Feature: {f}, Score: {round(v,2)}')
+    # plot feature importance
+    plt.figure(figsize = (10,7))
+    plt.bar([x for x in range(len(importance))], importance)
+    plt.xticks(np.arange(len(importance)),features[:-1],rotation = 30) 
+    plt.show()
+
 if __name__=="__main__":
     path = "./data.csv"
     df = readFile(path)
-    df = convertReview(df)
+    #df = convertReview(df)
     print(df.head(5))
     EDA(df)
     

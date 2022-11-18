@@ -1,5 +1,5 @@
 from sklearn.tree import DecisionTreeClassifier
-from utils import getData,analysis_wrong
+from utils import getData,analysis_wrong,featureImportance
 from sklearn.model_selection import KFold
 from sklearn.metrics import confusion_matrix
 import seaborn as sn
@@ -8,6 +8,7 @@ from sklearn import tree
 from dtreeviz.trees import dtreeviz # remember to load the package
 import numpy as np
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
 
 path = "./data.csv"
 df,X,y,ori = getData(path)
@@ -28,13 +29,14 @@ print(np.unique(y_pred,return_counts=True))
 # 計算準確率
 accuracy=clf.score(X_test, y_test)
     
-print(f"Accuracy={round(accuracy*100,2)}%")
+print(classification_report(y_test, y_pred))
 
 # Analysis Wrong
 wrong = analysis_wrong(y_test,y_pred,ori_X_test)
 for wrong,counts in wrong.items():
     print(f"'{wrong}': {counts}")
 
+    
 # Confusion matrix
 cm = confusion_matrix(y_test, y_pred)
 plt.figure(figsize = (10,7))
@@ -42,6 +44,8 @@ sn.heatmap(cm, annot=True,fmt='d')
 plt.xlabel('Predicted')
 plt.ylabel('Truth')
 plt.show()
+
+featureImportance(clf,features)
 
 # Visualize the best tree
 viz = dtreeviz(clf, X, y,

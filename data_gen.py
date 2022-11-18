@@ -2,17 +2,17 @@
 ## Determine an online course will be recommended or not 
 
 
-### 1. subject = {Design, Social Sciences, Management, Photography, Science, Information Technology, Music, Personal Development}
-### 2. subscribers = 0<N(7500,2500)
-### 3. free = {0,1} 1 if free with p=0.25,Bernoulli Trial
-### 4. fee = 0<(Exp(scale = 100)+10)*10
-### 5. reviews = randint(0,subscribers)
-### 6. avg reviews = rand.uniform(0.0,5.0)
-### 7. level = {Beginner(1), Intermediate(2), Expert(3)}
-### 8. letures = 0<N(10,5)
-### 9. duration = N(30,10)*letures
-### 10. published date = random date(1/1/2001 ~ 12/31/2021 )
-### 11. substitles = {0,1}
+### 0. subject = {Design, Social Sciences, Management, Photography, Science, Information Technology, Music, Personal Development}
+### 1. subscribers = 0<N(7500,2500)
+### 2. free = {0,1} 1 if free with p=0.25,Bernoulli Trial
+### 3. fee = 0<(Exp(scale = 100)+10)*10
+### 4. reviews = randint(0,subscribers)
+### 5. avg reviews = rand.uniform(0.0,5.0)
+### 6. level = {Beginner(1), Intermediate(2), Expert(3)}
+### 7. letures = 0<N(10,5)
+### 8. duration = N(30,10)*letures
+### 9. published date = random date(1/1/2001 ~ 12/31/2021 )
+### 10. subtitles = {0,1}
 ### Label-> recommend:{0,1}
 
 ## Rule(If 1 of the below rules is satisfied, recommend the course):
@@ -31,7 +31,7 @@ import csv
 from utils import ruleCheck,simpleRule,jointSimpleRule
 
 num_lecture = 10000
-header = ["subject","subscribers","free","fee","reviews","avg reviews","level","letures","duration","published date","substitles","recommend"]
+header = ["subject","subscribers","free","fee","reviews","avg reviews","level","lectures","duration","published date","subtitles","recommend"]
 
 # Domain
 subject = ['Design', 'Social Sciences', 'Management', 'Photography', 'Science', 'Information Technology', 'Music', 'Personal Development']
@@ -49,8 +49,6 @@ duration = np.random.normal(30,10,num_lecture)
 duration = duration.clip(0)
 fee = (np.round_(np.random.exponential(100,num_lecture))+10)*10
 fee = np.array(fee,dtype = "int64")
-avg_reviews = np.round_(np.random.uniform(0,5,num_lecture),decimals = 1)
-
 
 for i in range(num_lecture):
     temp = []
@@ -64,7 +62,7 @@ for i in range(num_lecture):
     else:
         temp.append(fee[i]) #3. fee
     temp.append(random.randint(0,temp[1])) #4. reviews
-    temp.append(avg_reviews[i]) #5. avg reviews
+    temp.append(random.randint(0,10)*0.5) #5. avg reviews
     temp.append(random.choice(level)) # 6. Level
     temp.append(lectures[i]) # 7. Number of lectures
     temp.append(round(duration[i]*lectures[i])) #8.  Duration
@@ -73,8 +71,9 @@ for i in range(num_lecture):
     temp.append(start + (end - start) * random.random()) #9. Published Date
     temp.append(random.choice([0,1])) #10. Substitles
 
-    #rec,_ = ruleCheck(temp)
-    rec = jointSimpleRule(temp)
+    rec,_ = ruleCheck(temp)
+    #rec,_ = simpleRule(temp)
+    #rec = jointSimpleRule(temp)
     temp.append(rec)
  
     data.append(temp)
