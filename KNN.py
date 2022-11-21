@@ -1,5 +1,5 @@
 from sklearn.neighbors import KNeighborsClassifier
-from utils import getData,normalization,analysis_wrong,featureImportance
+from utils import getData,normalization,analysis_wrong
 from sklearn.model_selection import KFold
 from sklearn.metrics import confusion_matrix
 import seaborn as sn
@@ -46,5 +46,3 @@ sn.heatmap(cm, annot=True,fmt='d')
 plt.xlabel('Predicted')
 plt.ylabel('Truth')
 plt.show()
-
-featureImportance(clf,features)
