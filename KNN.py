@@ -22,7 +22,7 @@ ori_X_train, ori_X_test, ori_y_train, ori_y_test = train_test_split(ori.iloc[:,:
 X_train,X_test = normalization(df,X_train,X_test)
 
 # 建立 KNN 模型
-clf = KNeighborsClassifier(n_neighbors = 8)
+clf = KNeighborsClassifier(n_neighbors = 16)
 # 使用訓練資料訓練模型
 clf.fit(X_train, y_train)
 print(np.unique(y_train,return_counts=True))
