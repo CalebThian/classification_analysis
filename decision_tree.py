@@ -36,6 +36,10 @@ wrong = analysis_wrong(y_test,y_pred,ori_X_test)
 for wrong,counts in wrong.items():
     print(f"'{wrong}': {counts}")
 
+# Print decision tree
+text_representation = tree.export_text(clf,feature_names = list(features)[:-1])
+with open("decistion_tree.log", "w") as fout:
+    fout.write(text_representation)
     
 # Confusion matrix
 cm = confusion_matrix(y_test, y_pred)
