@@ -1,0 +1,49 @@
+|--- fee <= 255.00
+|   |--- fee <= 105.00
+|   |   |--- class: 1
+|   |--- fee >  105.00
+|   |   |--- level <= 0.50
+|   |   |   |--- subscribers <= 12057.00
+|   |   |   |   |--- avg reviews <= 4.25
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- avg reviews >  4.25
+|   |   |   |   |   |--- reviews <= 0.76
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- reviews >  0.76
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- subscribers >  12057.00
+|   |   |   |   |--- class: 1
+|   |   |--- level >  0.50
+|   |   |   |--- class: 1
+|--- fee >  255.00
+|   |--- subscribers <= 11998.50
+|   |   |--- fee <= 505.00
+|   |   |   |--- level <= 0.50
+|   |   |   |   |--- avg reviews <= 4.25
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- avg reviews >  4.25
+|   |   |   |   |   |--- reviews <= 0.79
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- reviews >  0.79
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- level >  0.50
+|   |   |   |   |--- level <= 1.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- level >  1.50
+|   |   |   |   |   |--- reviews <= 0.85
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- reviews >  0.85
+|   |   |   |   |   |   |--- avg reviews <= 4.25
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- avg reviews >  4.25
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |--- fee >  505.00
+|   |   |   |--- avg reviews <= 4.25
+|   |   |   |   |--- class: 0
+|   |   |   |--- avg reviews >  4.25
+|   |   |   |   |--- reviews <= 0.80
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- reviews >  0.80
+|   |   |   |   |   |--- class: 1
+|   |--- subscribers >  11998.50
+|   |   |--- class: 1

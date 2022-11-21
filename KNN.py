@@ -1,5 +1,5 @@
 from sklearn.neighbors import KNeighborsClassifier
-from utils import getData,normalization,analysis_wrong
+from utils import getData,normalization,analysis_wrong,featureImportance
 from sklearn.model_selection import KFold
 from sklearn.metrics import confusion_matrix
 import seaborn as sn
@@ -22,7 +22,7 @@ ori_X_train, ori_X_test, ori_y_train, ori_y_test = train_test_split(ori.iloc[:,:
 X_train,X_test = normalization(df,X_train,X_test)
 
 # 建立 KNN 模型
-clf = KNeighborsClassifier(n_neighbors = 2)
+clf = KNeighborsClassifier(n_neighbors = 8)
 # 使用訓練資料訓練模型
 clf.fit(X_train, y_train)
 print(np.unique(y_train,return_counts=True))
@@ -46,3 +46,5 @@ sn.heatmap(cm, annot=True,fmt='d')
 plt.xlabel('Predicted')
 plt.ylabel('Truth')
 plt.show()
+
+featureImportance(clf,features)

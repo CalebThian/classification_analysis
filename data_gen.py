@@ -62,7 +62,10 @@ for i in range(num_lecture):
     else:
         temp.append(fee[i]) #3. fee
     temp.append(random.randint(0,temp[1])) #4. reviews
-    temp.append(random.randint(0,10)*0.5) #5. avg reviews
+    if temp[1] == 0:
+        temp.append(0) # If no subscriber, no avg. reviews
+    else:
+        temp.append(random.randint(0,10)*0.5) #5. avg reviews
     temp.append(random.choice(level)) # 6. Level
     temp.append(lectures[i]) # 7. Number of lectures
     temp.append(round(duration[i]*lectures[i])) #8.  Duration

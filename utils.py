@@ -48,7 +48,7 @@ def normalization(df,X_train,X_test):
 def getData(path):
     data = readFile(path)
     df = labelEncoder(data.copy())
-    df = convertReview(df)
+    #df = convertReview(df)
     df = preprocess_date(df,"published date")
     X = df.iloc[:,:-1]
     y = df.iloc[:,-1]
